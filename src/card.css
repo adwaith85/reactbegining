@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
     margin: 0;
     font-family: "poppins",sans-serif;
@@ -16,9 +18,10 @@ body{
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     text-align: center;
-    max-width: 400px;
-    width: 100%;
+    
+    width: auto;
     color: #fff;
+    
 }
 
 .bmi-card h2{
@@ -54,18 +57,21 @@ body{
 
 .btn-calculator{
     margin-top: 20px;
-    background: linear-gradient(90deg,#a67d02,#3a9b0a);
+    background: linear-gradient(90deg,#5a828d,#2c2d64);
     color: white;
     border: none;
     padding: 15px 20px;
     border-radius: 30px;
     font-size: 1rem;
     cursor: pointer;
+    width: 300px;
     transition: background 0.3s ease;
+    
 }
 
 .btn-calculator:hover{
-    background: linear-gradient(90deg,#e84e87,#660603);
+    width: 300px;
+    background: linear-gradient(90deg,#2e9b92,#7063a8);
 
 }
 
@@ -78,8 +84,16 @@ body{
 
 }
 
-.result h4{
+.result h2{
     font-size: 1rem;
-    color: #ffd700;
+    color: #bace04;
 
+}
+.btn-submit:hover{
+    background: linear-gradient(90deg,#0f9e8b,#284a7c);
+    
+}
+.cardbody{
+    background: linear-gradient(90deg,#dfb2c3,#7dce69);
+    margin-top: 50px;
 }
