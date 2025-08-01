@@ -3,6 +3,8 @@ import Interest from './interest'
 import Address from "./Address";
 function Home(){
     return <>
+    {/* <Card /> */}
+    {/* <Interest /> */}
     <Address/>
 {/* <Table/> */}
     </>

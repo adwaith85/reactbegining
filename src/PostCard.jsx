@@ -20,8 +20,8 @@ function PostCard(props) {
             <h5 style={{ fontSize: "25px", fontWeight: "bolder", fontFamily: "Montserrat", marginLeft: 160 }}>{props.pin}</h5>
 
             <div style={{ fontWeight: "bold", fontFamily: "Montserrat", margin:5 }}> 
-              <h6 >BranchType</h6>
-                <h5><b>{props.bt}</b></h5><br />
+              <h6>BranchType</h6>
+              <h5><b>{props.bt}</b></h5><br />
               <h6>location:</h6>
               <h5><b>{props.dis}/{props.st}/{props.con}</b></h5><br />
               <h6>Region:</h6>

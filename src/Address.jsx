@@ -34,7 +34,7 @@ function Address() {
       <h2 className="btn-calculator">pincode:{name ?? ""}</h2>
     </center>
 
-    <input style={{ justifyItems: "", justifyContent: "start", marginLeft: 55 }} type="text" onChange={(e) => setName(e.target.value)} />
+    <b>ENTER YOUR PINCODE</b><input style={{ justifyItems: "", justifyContent: "start", marginLeft:30 }} type="text" onChange={(e) => setName(e.target.value)} />
     {/* <button  className="btn-submit" onClick={onsubmit}>submit</button> */}
     {
       item ? item.map(item => <PostCard name={item.Name} st={item.State} ds={item.DeliveryStatus} bt={item.BranchType} dec={item.Division} dis={item.District} reg={item.Region} con={item.Country} pin={item.Pincode} />) :
