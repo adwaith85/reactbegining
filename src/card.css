@@ -7,7 +7,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
 }
 
 .bmi-card{
@@ -94,6 +94,27 @@ body{
     
 }
 .cardbody{
-    background: linear-gradient(90deg,#dfb2c3,#7dce69);
+    background: linear-gradient(90deg,#d8afbf,#b5eca7);
     margin-top: 50px;
 }
+
+
+
+
+
+
+
+ /* {
+                "Name": "Kannur",
+                "Description": null,
+                "BranchType": "Head Post Office",
+                "DeliveryStatus": "Delivery",
+                "Circle": "Kerala",
+                "District": "Kannur",
+                "Division": "Cannanore",
+                "Region": "Calicut",
+                "Block": "Kannur",
+                "State": "Kerala",
+                "Country": "India",
+                "Pincode": "670001"
+            }, */
