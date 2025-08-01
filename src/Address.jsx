@@ -38,7 +38,7 @@ function Address() {
     {/* <button  className="btn-submit" onClick={onsubmit}>submit</button> */}
     {
       item ? item.map(item => <PostCard name={item.Name} st={item.State} ds={item.DeliveryStatus} bt={item.BranchType} dec={item.Division} dis={item.District} reg={item.Region} con={item.Country} pin={item.Pincode} />) :
-        <><br />no data found</>
+        <></>
     }
   </div>
 }
