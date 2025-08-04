@@ -1,11 +1,14 @@
 import Card  from "./Card";
 import Interest from './interest'
 import Address from "./Address";
+import Product from "./Product";
+
 function Home(){
     return <>
+    <Product />
     {/* <Card /> */}
     {/* <Interest /> */}
-    <Address/>
+    {/* <Address/> */}
 {/* <Table/> */}
     </>
 }
