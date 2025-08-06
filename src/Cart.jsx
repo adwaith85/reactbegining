@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react"
+import {  useContext, useEffect, useState } from "react"
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -10,11 +10,22 @@ function Cart(){
 
 
     const {cartItems, setCartItems}=useContext(CartContext)
+    const removeItem=(item)=>{
+        setCartItems((prev)=>prev.filter(i=>i.id!==item.id))
 
-  
+
+    }
+useEffect(()=>{
+    if(cartItems.length === 0) {
+        
+        alert("Your cart is empty!");
+    }
+})
+
+
 //     const [data,setData]=useState([])
     
-//     const onsubmit=async()=>{
+//     const onsubmit=async()=>{ 
 //         const res=await fetch('https://fakestoreapi.com/products/')
 //         const d=await res.json()
 //         setData(d)
@@ -40,7 +51,8 @@ function Cart(){
       <Card.Body>
         <Card.Title>{item.title}</Card.Title>
         <Card.Text>
-          {/* $::{item.price} */}
+          $::{item.price}<br/>
+          <button onClick={()=>removeItem(item)}>Remove</button>
         </Card.Text>
     </Card.Body>
     </Card>

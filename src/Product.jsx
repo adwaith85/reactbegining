@@ -43,8 +43,10 @@ function Product() {
 
     // Fetch data on mount
     useEffect(() => {
-        onsubmit();
-    }, []);
+        const t = setTimeout(() => onsubmit(), 500)
+    
+        return () => clearTimeout(t)
+      }, [name])
 
     return (
         <>
@@ -102,7 +104,8 @@ function Detail(props) {
     const item = {
         id: props.id,
         title: props.title,
-        image: props.image
+        image: props.image,
+        price: props.price
     };
 
     return (
