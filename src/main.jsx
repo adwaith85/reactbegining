@@ -8,19 +8,29 @@ import { Routes } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import ProductScreen from './ProductScreen';
 import About from './About';
+import Cart from './Cart';
+import { CartProvider } from './CarProvider';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
 
 
-    <BrowserRouter>
+<CartProvider>
+   <BrowserRouter>
     <Routes>
-
-      <Route path='/' element={<Home/>}/>
+   
+  <Route path='/' element={<Home/>}/>
       <Route path='/product/:id' element={<ProductScreen/>}/>
+      <Route path='/cart' element={<Cart/>}/>
       <Route path='/about' element={<About/>}/>
+  
+    
     </Routes>
     
     </BrowserRouter>
+
+</CartProvider>
+     
+
 
     
   </StrictMode>,
