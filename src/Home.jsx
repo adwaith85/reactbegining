@@ -2,10 +2,13 @@ import Card  from "./Card";
 import Interest from './interest'
 import Address from "./Address";
 import Product from "./Product";
-
+import GetData from "./Getdata";
+import SetItem from "./SetItem"
 function Home(){
     return <>
-    <Product />
+    <SetItem/>
+    {/* <GetData/> */}
+    {/* <Product /> */}
     {/* <Card /> */}
     {/* <Interest /> */}
     {/* <Address/> */}

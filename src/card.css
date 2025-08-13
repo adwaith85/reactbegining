@@ -7,7 +7,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 500px;
 }
 
 .bmi-card{
@@ -23,11 +23,15 @@ body{
     color: #fff;
     
 }
-
+.bmi-card p{
+    text-align: left;
+     color: #4d4545;
+font-size: 1rem;
+}
 .bmi-card h2{
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #fff;
+    color: #4d4545;
 }
 .input-group{
     margin-bottom: 15px;

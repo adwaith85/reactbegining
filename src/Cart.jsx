@@ -17,8 +17,7 @@ function Cart(){
     }
 useEffect(()=>{
     if(cartItems.length === 0) {
-        
-        alert("Your cart is empty!");
+          alert("Your cart is empty!"); 
     }
 })
 
