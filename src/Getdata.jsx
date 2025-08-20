@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react"
+import { CartContext } from "./CarProvider";
 // import SetItem from "./SetItem"
 function GetData(){
     const [data,setData]=useState([])
 
     const getItem=async()=>{
-     const  res=await fetch("http://localhost:8080/user")
+     const  res=await fetch("http://localhost:8080/admin")
      const  data=await res.json()
        setData(data)
     }
@@ -22,17 +23,12 @@ function GetData(){
 
 export default GetData
 
-
-function Created({data}){
-        const {name,email,number}=data
+function Created(){
+    const {name,price,img}={data}
     return<>
-    <h2>data </h2>
-    <p>
-        name={name},
-        email={email},
-        number={number}
-
-    </p>
+    name={name}
+    price={price}
+    <img src={img}/>
     </>
 }
 

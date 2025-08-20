@@ -6,6 +6,7 @@ import GetData from "./Getdata";
 import SetItem from "./SetItem"
 function Home(){
     return <>
+   
     <SetItem/>
     {/* <GetData/> */}
     {/* <Product /> */}
